@@ -1,0 +1,12 @@
+server:
+  port: 8085
+spring:
+  kafka:
+    consumer:
+      group-id: group1
+      auto-offset-reset: earliest
+    bootstrap-servers: localhost:9092
+
+topic:
+  topic-name: topic-1
+  messages-per-request: 10
